@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#root{
+    width: 30%;
+}
+.welcome h1{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+    color:#1a78f2;
+}
+.welcome form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+}
+.welcome form *{
+    width: 100%;
+}
+.welcome form > *{
+    margin-top:2rem
+}
+.welcome label input{
+    outline:none;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.welcome label input:focus{
+    border: 1px solid #1a78f2;
+}
+.welcome input{
+    padding: 1.25rem 1rem;
+}
+@media (max-width:425px){
+    html{
+        font-size: 10px;
+    }
+    #root{
+        width: 90%;
+    }
+}
+@media (min-width: 426px) and (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    #root{
+        width: 80%;
+    }
+}
+@media (min-width:767px) and (max-width:1024px){
+    html{
+        font-size: 16px;
+    }
+    #root{
+        width: 50%;
+    }
+}
